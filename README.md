@@ -1,149 +1,165 @@
 # 🏠 House Price Prediction in India using Machine Learning
 
-An end-to-end Machine Learning Regression project that predicts house prices in Bengaluru, India using property features such as location, area, BHK, bathrooms, and balconies.
+> An End-to-End Machine Learning Regression project that predicts house prices in Bengaluru, India using multiple regression algorithms.
 
 ---
 
 ## 📌 Project Overview
 
-The objective of this project is to build an accurate regression model for predicting house prices using real-world housing data.
+The real estate industry generates a massive amount of housing data every day. Predicting house prices accurately helps buyers, sellers, investors, and real estate companies make informed decisions.
 
-The project covers the complete Machine Learning workflow:
+This project develops an end-to-end Machine Learning pipeline that predicts house prices using various housing attributes such as location, area, number of bedrooms, bathrooms, and balconies.
 
-- Data Loading
-- Data Cleaning & Preprocessing
-- Outlier Detection & Removal
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Model Building
-- Model Evaluation
-- Feature Importance
-- Business Insights
+The project covers the complete Machine Learning lifecycle including data preprocessing, exploratory data analysis (EDA), feature engineering, model building, model evaluation, and business insights.
 
 ---
 
-## 🎯 Objective
+# 🎯 Objectives
 
-Develop a regression model that accurately predicts house prices based on different housing features and compare multiple Machine Learning algorithms to identify the best-performing model.
-
----
-
-## 🛠️ Technologies Used
-
-- Python
-- Google Colab
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
+- Explore and understand the housing dataset.
+- Clean and preprocess the data.
+- Handle missing values and outliers.
+- Perform Exploratory Data Analysis (EDA).
+- Engineer useful features.
+- Train multiple Machine Learning models.
+- Compare model performance.
+- Identify the best-performing regression model.
 
 ---
 
-## 📂 Project Structure
+# 🛠️ Technologies Used
+
+| Category | Tools |
+|----------|------|
+| Language | Python |
+| Notebook | Google Colab |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+
+---
+
+# 📂 Project Structure
 
 ```text
 House-Price-Prediction-India
 │
-├── data
-├── notebook
-├── report
-├── images
-├── README.md
-├── requirements.txt
-├── LICENSE
-└── .gitignore
+├── Datasets
+├── Images
+├── NoteBook
+├── Report
+└── README.md
 ```
 
 ---
 
-## 📊 Dataset
+# 📊 Dataset Information
 
-**Dataset Name:** Bengaluru House Price Dataset
+**Dataset:** Bengaluru House Price Dataset
 
-**Target Variable:** Price
+**Target Variable**
 
-### Features
+- Price
+
+**Features**
 
 - Area Type
 - Availability
 - Location
 - Total Square Feet
-- BHK
+- Size
 - Bathrooms
 - Balcony
 - Price
 
 ---
 
-## 🔄 Machine Learning Workflow
+# 🔄 Machine Learning Workflow
 
-1. Data Loading
-2. Data Exploration
-3. Data Cleaning
-4. Outlier Removal
-5. Feature Engineering
-6. Exploratory Data Analysis
-7. Model Building
-8. Model Evaluation
-9. Business Insights
----
-
-# 📈 Exploratory Data Analysis (EDA)
-
-## Distribution of House Prices
-
-![House Price Distribution](images/01_house_price_distribution.png)
-
----
-
-## Price vs Total Square Feet
-
-![Price vs Total Sqft](images/02_price_vs_total_sqft.png)
-
----
-
-## Price vs BHK
-
-![Price vs BHK](images/03_price_vs_bhk.png)
+```
+Dataset
+   │
+   ▼
+Data Cleaning
+   │
+   ▼
+EDA
+   │
+   ▼
+Feature Engineering
+   │
+   ▼
+Model Building
+   │
+   ▼
+Model Evaluation
+   │
+   ▼
+Business Insights
+```
 
 ---
 
-## Top 10 Locations
+# 📈 Exploratory Data Analysis
 
-![Top Locations](images/06_top_10_locations.png)
+### Distribution of House Prices
+
+![Distribution of House Prices](Images/01_house_price_distribution.png)
 
 ---
 
-## Correlation Heatmap
+### Price vs Total Square Feet
 
-![Correlation Heatmap](images/07_correlation_heatmap.png)
+![Price vs Total Square Feet](Images/02_price_vs_total_sqft.png)
 
+---
+
+### Price vs BHK
+
+![Price vs BHK](Images/03_price_vs_bhk.png)
+
+---
+
+### Price vs Bathrooms
+
+![Price vs Bathrooms](Images/04_price_vs_bathrooms.png)
+
+---
+
+### Top 10 Locations
+
+![Top Locations](Images/06_top_10_locations.png)
+
+---
+
+### Correlation Heatmap
+
+![Correlation Heatmap](Images/07_correlation_heatmap.png)
 ---
 
 # 🤖 Machine Learning Models
 
-The following regression algorithms were trained and evaluated:
+The following regression models were trained and evaluated to predict house prices:
 
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
+- ✅ Linear Regression
+- ✅ Decision Tree Regressor
+- ✅ Random Forest Regressor
 
 ---
 
-# 📊 Model Performance
+# 📊 Model Performance Comparison
 
 | Model | MAE | RMSE | R² Score |
-|------|------:|------:|------:|
+|:------|----:|-----:|---------:|
 | Linear Regression | 26.28 | 84.37 | 0.7358 |
 | Decision Tree | 4.63 | 46.01 | 0.9214 |
-| Random Forest | 2.27 | 32.26 | **0.9313** |
+| **Random Forest** ⭐ | **2.27** | **32.26** | **0.9313** |
 
 ---
 
-## 📷 Model Comparison
+## 📈 Model Comparison
 
-![Model Comparison](images/12_model_comparison_table.png)
+![Model Comparison](Images/12_model_comparison_table.png)
 
 ---
 
@@ -151,32 +167,68 @@ The following regression algorithms were trained and evaluated:
 
 The Random Forest model identified the following features as the most influential in predicting house prices.
 
-![Feature Importance](images/11_feature_importance.png)
+![Feature Importance](Images/11_feature_importance.png)
 
 ---
 
 # 💡 Key Business Insights
 
-- Property location is one of the strongest factors affecting house prices.
-- Larger properties generally have higher market value.
-- The number of bedrooms and bathrooms significantly influences pricing.
-- Removing outliers improved model performance.
-- Random Forest achieved the highest prediction accuracy among all models.
+- 📍 Location is one of the strongest factors affecting house prices.
+- 📐 Larger houses generally have higher market values.
+- 🛏️ BHK significantly impacts property prices.
+- 🚿 Houses with more bathrooms usually have higher selling prices.
+- 📊 Removing outliers improved model performance considerably.
+- 🌳 Random Forest delivered the best prediction accuracy for this dataset.
 
 ---
 
 # 🚀 Future Improvements
 
-- Hyperparameter tuning
-- XGBoost and CatBoost implementation
-- Model deployment using Flask or Streamlit
-- Integration with real-time housing APIs
-- Interactive prediction dashboard
+- Deploy the model using **Flask** or **Streamlit**
+- Integrate live housing market APIs
+- Perform Hyperparameter Tuning
+- Implement XGBoost and CatBoost
+- Develop an interactive web application
+- Build a real-time house price prediction system
 
 ---
 
-# 👨‍💻 Author
+# 📄 Report
+
+A detailed project report is available inside the **Report** folder.
+
+---
+
+# 📁 Notebook
+
+The complete implementation is available in the **NoteBook** folder.
+
+---
+
+# 🙋 Author
 
 **Prashant Kumar Nandi**
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+Aspiring Data Analyst | Machine Learning Enthusiast | Python Learner
+
+---
+
+## ⭐ If you found this project useful
+
+Please consider **starring ⭐ this repository**.
+
+It motivates me to build and share more Machine Learning projects.
+
+---
+
+## 📬 Connect with Me
+
+- GitHub: https://github.com/prasantkumar0441-alt
+
+---
+
+# 📌 Project Status
+
+✅ Completed
+
+---
